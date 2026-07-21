@@ -1,0 +1,19 @@
+{
+    "MosaicPostProcessPart1.proband_vcf": "gs://${TERRA_BUCKET}/control_hc/LLDD009_control_150x.hc_ploidy2.vcf.gz",
+    "MosaicPostProcessPart1.proband_vcf_index": "gs://${TERRA_BUCKET}/control_hc/LLDD009_control_150x.hc_ploidy2.vcf.gz.tbi",
+    "MosaicPostProcessPart1.mother_vcf": "gs://${TERRA_BUCKET}/control_hc/LLDD009_1_control_mother.hc_ploidy2.vcf.gz",
+    "MosaicPostProcessPart1.mother_vcf_index": "gs://${TERRA_BUCKET}/control_hc/LLDD009_1_control_mother.hc_ploidy2.vcf.gz.tbi",
+    "MosaicPostProcessPart1.father_vcf": "gs://${TERRA_BUCKET}/control_hc/LLDD009_2_control_father.hc_ploidy2.vcf.gz",
+    "MosaicPostProcessPart1.father_vcf_index": "gs://${TERRA_BUCKET}/control_hc/LLDD009_2_control_father.hc_ploidy2.vcf.gz.tbi",
+    "MosaicPostProcessPart1.proband_bam": "gs://${TERRA_BUCKET}/control_subsampling/LLDD009_control.150x.bam",
+    "MosaicPostProcessPart1.proband_bai": "gs://${TERRA_BUCKET}/control_subsampling/LLDD009_control.150x.bam.bai",
+    "MosaicPostProcessPart1.mother_bam": "gs://${TERRA_BUCKET}/control/LLDD009_1-sort.bam",
+    "MosaicPostProcessPart1.mother_bai": "gs://${TERRA_BUCKET}/control/LLDD009_1-sort.bam.bai",
+    "MosaicPostProcessPart1.father_bam": "gs://${TERRA_BUCKET}/control/LLDD009_2-sort.bam",
+    "MosaicPostProcessPart1.father_bai": "gs://${TERRA_BUCKET}/control/LLDD009_2-sort.bam.bai",
+    "MosaicPostProcessPart1.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+    "MosaicPostProcessPart1.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
+    "MosaicPostProcessPart1.segdup_bed": "gs://${TERRA_BUCKET}/annotations/GRCh38GenomicSuperDup.bed",
+    "MosaicPostProcessPart1.lcr_bed": "gs://${TERRA_BUCKET}/annotations/LCR-hs38.bed.gz",
+    "MosaicPostProcessPart1.sample_name": "LLDD009_control_150x"
+}

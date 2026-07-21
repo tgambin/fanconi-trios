@@ -1,0 +1,6 @@
+{
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/small_proband/pr240-chr14_47M_58M.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/small_proband/pr240-chr14_47M_58M.bam.bai",
+    "DownsampleProband.sample_name": "pr240_chr14_47M_58M_test",
+    "DownsampleProband.is_wgs": false
+}

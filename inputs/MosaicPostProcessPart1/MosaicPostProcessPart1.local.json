@@ -1,0 +1,19 @@
+{
+    "MosaicPostProcessPart1.proband_vcf": "${LOCAL_TERRA_DIR}/data/vcfs/pr240_chr14_test.hc_ploidy2.vcf.gz",
+    "MosaicPostProcessPart1.proband_vcf_index": "${LOCAL_TERRA_DIR}/data/vcfs/pr240_chr14_test.hc_ploidy2.vcf.gz.tbi",
+    "MosaicPostProcessPart1.mother_vcf": "${LOCAL_TERRA_DIR}/data/vcfs/Mo240_chr14_test.vcf.gz",
+    "MosaicPostProcessPart1.mother_vcf_index": "${LOCAL_TERRA_DIR}/data/vcfs/Mo240_chr14_test.vcf.gz.tbi",
+    "MosaicPostProcessPart1.father_vcf": "${LOCAL_TERRA_DIR}/data/vcfs/Fa240_chr14_test.vcf.gz",
+    "MosaicPostProcessPart1.father_vcf_index": "${LOCAL_TERRA_DIR}/data/vcfs/Fa240_chr14_test.vcf.gz.tbi",
+    "MosaicPostProcessPart1.proband_bam": "${LOCAL_TERRA_DIR}/data/bams/pr240-chr14_47M_58M.bam",
+    "MosaicPostProcessPart1.proband_bai": "${LOCAL_TERRA_DIR}/data/bams/pr240-chr14_47M_58M.bam.bai",
+    "MosaicPostProcessPart1.mother_bam": "${LOCAL_TERRA_DIR}/data/bams/Mo240-chr14_47M_58M.bam",
+    "MosaicPostProcessPart1.mother_bai": "${LOCAL_TERRA_DIR}/data/bams/Mo240-chr14_47M_58M.bam.bai",
+    "MosaicPostProcessPart1.father_bam": "${LOCAL_TERRA_DIR}/data/bams/Fa240-chr14_47M_58M.bam",
+    "MosaicPostProcessPart1.father_bai": "${LOCAL_TERRA_DIR}/data/bams/Fa240-chr14_47M_58M.bam.bai",
+    "MosaicPostProcessPart1.ref_fasta": "${LOCAL_TERRA_DIR}/data/ref/chr14.fa",
+    "MosaicPostProcessPart1.ref_index": "${LOCAL_TERRA_DIR}/data/ref/chr14.fa.fai",
+    "MosaicPostProcessPart1.segdup_bed": "${LOCAL_TERRA_DIR}/data/annotations/GRCh38GenomicSuperDup.chr14.bed",
+    "MosaicPostProcessPart1.lcr_bed": "${LOCAL_TERRA_DIR}/data/annotations/LCR-hs38.bed.gz",
+    "MosaicPostProcessPart1.sample_name": "pr240_chr14_test"
+}

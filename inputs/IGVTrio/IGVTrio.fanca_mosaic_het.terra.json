@@ -1,0 +1,15 @@
+{
+    "IGVTrio_Final.variants_tsv": "gs://${TERRA_BUCKET}/igv_inputs/fanca_mosaic_het_igv.tsv",
+    "IGVTrio_Final.proband_bam": "gs://${TERRA_BUCKET}/fanca_subsampling/Mil99_fanca.150x.bam",
+    "IGVTrio_Final.proband_bai": "gs://${TERRA_BUCKET}/fanca_subsampling/Mil99_fanca.150x.bam.bai",
+    "IGVTrio_Final.mother_bam": "gs://${TERRA_BUCKET}/fanca/Iza39-sort.bam",
+    "IGVTrio_Final.mother_bai": "gs://${TERRA_BUCKET}/fanca/Iza39-sort.bam.bai",
+    "IGVTrio_Final.father_bam": "gs://${TERRA_BUCKET}/fanca/Jar40-sort.bam",
+    "IGVTrio_Final.father_bai": "gs://${TERRA_BUCKET}/fanca/Jar40-sort.bam.bai",
+    "IGVTrio_Final.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+    "IGVTrio_Final.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
+    "IGVTrio_Final.output_name": "fanca_mosaic_het_igv",
+    "IGVTrio_Final.padding": 200,
+    "IGVTrio_Final.is_terra": true,
+    "IGVTrio_Final.igv_docker_image": "${IGV_DOCKER_IMAGE}"
+}

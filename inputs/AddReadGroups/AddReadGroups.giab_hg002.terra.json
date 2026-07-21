@@ -1,0 +1,5 @@
+{
+    "AddReadGroups.input_bam": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG002_giab.150x.bam",
+    "AddReadGroups.input_bai": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG002_giab.150x.bam.bai",
+    "AddReadGroups.sample_name": "HG002"
+}

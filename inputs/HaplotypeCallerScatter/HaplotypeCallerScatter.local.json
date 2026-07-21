@@ -1,0 +1,13 @@
+{
+    "HaplotypeCallerScatter.proband_bam": "${LOCAL_TERRA_DIR}/data/bams/pr240-chr14_47M_58M.bam",
+    "HaplotypeCallerScatter.proband_bai": "${LOCAL_TERRA_DIR}/data/bams/pr240-chr14_47M_58M.bam.bai",
+    "HaplotypeCallerScatter.ref_fasta": "${LOCAL_TERRA_DIR}/data/ref/chr14.fa",
+    "HaplotypeCallerScatter.ref_index": "${LOCAL_TERRA_DIR}/data/ref/chr14.fa.fai",
+    "HaplotypeCallerScatter.ref_dict": "${LOCAL_TERRA_DIR}/data/ref/chr14.dict",
+    "HaplotypeCallerScatter.sample_name": "pr240_chr14_test",
+    "HaplotypeCallerScatter.intervals": "${LOCAL_TERRA_DIR}/data/metadata/intervals.list",
+    "HaplotypeCallerScatter.scatter_count": 5,
+    "HaplotypeCallerScatter.sample_ploidy": 2,
+    "HaplotypeCallerScatter.cpu_per_scatter": 2,
+    "HaplotypeCallerScatter.memory_per_scatter": "4 GB"
+}

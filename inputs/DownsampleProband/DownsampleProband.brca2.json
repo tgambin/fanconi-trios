@@ -1,0 +1,6 @@
+{
+  "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/brca2/Van70-ready.bam",
+  "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/brca2/Van70-ready.bam.bai",
+  "DownsampleProband.sample_name": "Van70_brca2",
+  "DownsampleProband.is_wgs": true
+}

@@ -1,0 +1,7 @@
+{
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/control/LLDD009_2-sort.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/control/LLDD009_2-sort.bam.bai",
+    "DownsampleProband.sample_name": "LLDD009_2_control_father",
+    "DownsampleProband.target_coverages": [],
+    "DownsampleProband.is_wgs": true
+}

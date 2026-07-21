@@ -1,0 +1,12 @@
+{
+    "Mutect2TumorOnlyScatter.proband_bam": "gs://${TERRA_BUCKET}/small_proband/pr240-chr14_47M_58M.bam",
+    "Mutect2TumorOnlyScatter.proband_bai": "gs://${TERRA_BUCKET}/small_proband/pr240-chr14_47M_58M.bam.bai",
+    "Mutect2TumorOnlyScatter.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+    "Mutect2TumorOnlyScatter.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
+    "Mutect2TumorOnlyScatter.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
+    "Mutect2TumorOnlyScatter.sample_name": "pr240_chr14_terra_test",
+    "Mutect2TumorOnlyScatter.intervals": "gs://${TERRA_BUCKET}/small_proband/intervals.list",
+    "Mutect2TumorOnlyScatter.scatter_count": 5,
+    "Mutect2TumorOnlyScatter.cpu_per_scatter": 2,
+    "Mutect2TumorOnlyScatter.memory_per_scatter": "4 GB"
+}

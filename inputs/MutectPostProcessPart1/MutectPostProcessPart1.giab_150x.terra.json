@@ -1,0 +1,19 @@
+{
+    "MutectPostProcessPart1.proband_vcf": "gs://${TERRA_BUCKET}/giab_mutect2/HG002_giab_150x.filtered.vcf.gz",
+    "MutectPostProcessPart1.proband_vcf_index": "gs://${TERRA_BUCKET}/giab_mutect2/HG002_giab_150x.filtered.vcf.gz.tbi",
+    "MutectPostProcessPart1.mother_vcf": "gs://${TERRA_BUCKET}/giab_hc/HG004_giab_mother.hc_ploidy2.vcf.gz",
+    "MutectPostProcessPart1.mother_vcf_index": "gs://${TERRA_BUCKET}/giab_hc/HG004_giab_mother.hc_ploidy2.vcf.gz.tbi",
+    "MutectPostProcessPart1.father_vcf": "gs://${TERRA_BUCKET}/giab_hc/HG003_giab_father.hc_ploidy2.vcf.gz",
+    "MutectPostProcessPart1.father_vcf_index": "gs://${TERRA_BUCKET}/giab_hc/HG003_giab_father.hc_ploidy2.vcf.gz.tbi",
+    "MutectPostProcessPart1.proband_bam": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG002.rg.bam",
+    "MutectPostProcessPart1.proband_bai": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG002.rg.bam.bai",
+    "MutectPostProcessPart1.mother_bam": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG004.rg.bam",
+    "MutectPostProcessPart1.mother_bai": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG004.rg.bam.bai",
+    "MutectPostProcessPart1.father_bam": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG003.rg.bam",
+    "MutectPostProcessPart1.father_bai": "gs://${TERRA_BUCKET}/giab_trio_subsampling/HG003.rg.bam.bai",
+    "MutectPostProcessPart1.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+    "MutectPostProcessPart1.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
+    "MutectPostProcessPart1.segdup_bed": "gs://${TERRA_BUCKET}/annotations/GRCh38GenomicSuperDup.bed",
+    "MutectPostProcessPart1.lcr_bed": "gs://${TERRA_BUCKET}/annotations/LCR-hs38.bed.gz",
+    "MutectPostProcessPart1.sample_name": "HG002_giab_150x"
+}

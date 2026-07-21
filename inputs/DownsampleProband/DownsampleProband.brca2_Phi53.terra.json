@@ -1,0 +1,7 @@
+{
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/brca2/Phi53-ready.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/brca2/Phi53-ready.bam.bai",
+    "DownsampleProband.sample_name": "Phi53_brca2_father",
+    "DownsampleProband.target_coverages": [],
+    "DownsampleProband.is_wgs": true
+}

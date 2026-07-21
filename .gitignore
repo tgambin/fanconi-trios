@@ -1,0 +1,74 @@
+# Cromwell Executions
+cromwell-executions/
+cromwell-workflow-logs/
+cromwell-*.jar
+
+# Large Data & References
+# Ignore everything in data/ by default
+data/*
+# Exceptions for metadata and small annotations
+!data/metadata/
+!data/annotations/
+!data/giab_benchmark/
+!data/README.md
+
+# Large Reference Files even in allowed dirs
+*.fasta
+*.fa
+*.2bit
+*.dict
+*.fai
+
+# Large Alignments & Variants
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bcf
+*.gvcf
+*.gvcf.gz
+
+# Derived study tables (also ignored when accidentally copied outside outputs/)
+*.part1.csv
+*_part2_*.tsv
+*_mosaic.tsv
+*_het.tsv
+all_trios_igv*.csv
+
+# Generated outputs are intentionally not part of the repository.
+outputs/
+
+# Archives
+*.tar.gz
+*.zip
+
+# Secrets & Local Config
+inputs/local.json
+.env
+.env.*
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# System
+.DS_Store
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# Docker
+docker_cid
+
+# Temporary
+tmp/
+logs/
+
+# LibreOffice / Word lock files
+*.~lock.*
