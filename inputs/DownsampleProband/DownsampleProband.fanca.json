@@ -1,6 +1,6 @@
 {
-    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/fanca/Mil99-sort.bam",
-    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/fanca/Mil99-sort.bam.bai",
-    "DownsampleProband.sample_name": "Mil99_fanca",
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/fanca/FANCA_PROBAND.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/fanca/FANCA_PROBAND.bam.bai",
+    "DownsampleProband.sample_name": "FANCA_PROBAND",
     "DownsampleProband.is_wgs": true
 }

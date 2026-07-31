@@ -1,10 +1,10 @@
 {
-    "HaplotypeCallerScatter.proband_bam": "gs://${TERRA_BUCKET}/brca1/MAT61-sort.bam",
-    "HaplotypeCallerScatter.proband_bai": "gs://${TERRA_BUCKET}/brca1/MAT61-sort.bam.bai",
+    "HaplotypeCallerScatter.proband_bam": "gs://${TERRA_BUCKET}/brca1/BRCA1_MOTHER.bam",
+    "HaplotypeCallerScatter.proband_bai": "gs://${TERRA_BUCKET}/brca1/BRCA1_MOTHER.bam.bai",
     "HaplotypeCallerScatter.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
     "HaplotypeCallerScatter.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
     "HaplotypeCallerScatter.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
-    "HaplotypeCallerScatter.sample_name": "MAT61_brca1_mother",
+    "HaplotypeCallerScatter.sample_name": "BRCA1_MOTHER",
     "HaplotypeCallerScatter.intervals": "gs://gcp-public-data--broad-references/hg38/v0/wgs_calling_regions.hg38.interval_list",
     "HaplotypeCallerScatter.scatter_count": 100,
     "HaplotypeCallerScatter.sample_ploidy": 2,

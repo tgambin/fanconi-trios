@@ -1,7 +1,0 @@
-{
-    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/brca2/Hel61-ready.bam",
-    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/brca2/Hel61-ready.bam.bai",
-    "DownsampleProband.sample_name": "Hel61_brca2_mother",
-    "DownsampleProband.target_coverages": [],
-    "DownsampleProband.is_wgs": true
-}

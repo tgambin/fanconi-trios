@@ -99,26 +99,26 @@ POLARS_INFER_SCHEMA = 10000  # rows used to infer dtypes on VCF-derived CSVs
 # --- Sample / trio map ---------------------------------------------------
 # One source of truth for trio → sample metadata. Any new trio added here.
 SAMPLES: dict[str, dict[str, str]] = {
-    "brca1":   {"proband": "ICE59",   "sample_id": "ICE59_brca1_150x",
+    "brca1":   {"proband": "BRCA1_PROBAND",   "sample_id": "BRCA1_PROBAND_150x",
                 "gene": "BRCA1",
-                "mother": "MAT61_brca1_mother",
-                "father": "MOE60_brca1_father"},
-    "brca2":   {"proband": "Van70",   "sample_id": "Van70_brca2_150x",
+                "mother": "BRCA1_MOTHER",
+                "father": "BRCA1_FATHER"},
+    "brca2":   {"proband": "BRCA2_PROBAND",   "sample_id": "BRCA2_PROBAND_150x",
                 "gene": "BRCA2",
-                "mother": "Hel61_brca2_mother",
-                "father": "Phi53_brca2_father"},
-    "fanca":   {"proband": "Mil99",   "sample_id": "Mil99_fanca_150x",
+                "mother": "BRCA2_MOTHER",
+                "father": "BRCA2_FATHER"},
+    "fanca":   {"proband": "FANCA_PROBAND",   "sample_id": "FANCA_PROBAND_150x",
                 "gene": "FANCA",
-                "mother": "Iza39_fanca_mother",
-                "father": "Jar40_fanca_father"},
-    "fanct":   {"proband": "pr240",   "sample_id": "pr240_fanct_150x",
+                "mother": "FANCA_MOTHER",
+                "father": "FANCA_FATHER"},
+    "fanct":   {"proband": "FANCT_PROBAND",   "sample_id": "FANCT_PROBAND_150x",
                 "gene": "UBE2T",
-                "mother": "Mo240_fanct_mother",
-                "father": "Fa240_fanct_father"},
-    "control": {"proband": "LLDD009", "sample_id": "LLDD009_control_150x",
+                "mother": "FANCT_MOTHER",
+                "father": "FANCT_FATHER"},
+    "control": {"proband": "CONTROL_PROBAND", "sample_id": "CONTROL_PROBAND_150x",
                 "gene": "(none)",
-                "mother": "LLDD009_1_control_mother",
-                "father": "LLDD009_2_control_father"},
+                "mother": "CONTROL_MOTHER",
+                "father": "CONTROL_FATHER"},
     "giab":    {"proband": "HG002",   "sample_id": "HG002_giab_150x",
                 "gene": "GIAB control",
                 "mother": "HG004_giab",
@@ -131,7 +131,7 @@ GIAB = ["giab"]
 # Named groupings used by downstream analyses and report generators so that
 # trio membership is never hard-coded by a string literal.
 INDEX_TRIO = "brca2"                              # FANCD1/BRCA2 — primary case
-CONTROL_TRIO = "control"                          # LLDD009 — in-house negative control
+CONTROL_TRIO = "control"                          # CONTROL_PROBAND — in-house negative control
 GIAB_TRIO = "giab"                                # GIAB HG002 — external negative control
 OTHER_FA_TRIOS = ("brca1", "fanca", "fanct")      # FA probands other than INDEX_TRIO
 FA_TRIOS = (INDEX_TRIO,) + OTHER_FA_TRIOS         # all FA probands (case set)

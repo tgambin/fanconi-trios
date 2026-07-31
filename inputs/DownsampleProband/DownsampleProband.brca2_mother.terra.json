@@ -1,0 +1,7 @@
+{
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/brca2/BRCA2_MOTHER.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/brca2/BRCA2_MOTHER.bam.bai",
+    "DownsampleProband.sample_name": "BRCA2_MOTHER",
+    "DownsampleProband.target_coverages": [],
+    "DownsampleProband.is_wgs": true
+}

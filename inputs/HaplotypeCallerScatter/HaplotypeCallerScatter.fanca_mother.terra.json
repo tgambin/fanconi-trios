@@ -1,10 +1,10 @@
 {
-    "HaplotypeCallerScatter.proband_bam": "gs://${TERRA_BUCKET}/fanca/Iza39-sort.bam",
-    "HaplotypeCallerScatter.proband_bai": "gs://${TERRA_BUCKET}/fanca/Iza39-sort.bam.bai",
+    "HaplotypeCallerScatter.proband_bam": "gs://${TERRA_BUCKET}/fanca/FANCA_MOTHER.bam",
+    "HaplotypeCallerScatter.proband_bai": "gs://${TERRA_BUCKET}/fanca/FANCA_MOTHER.bam.bai",
     "HaplotypeCallerScatter.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
     "HaplotypeCallerScatter.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
     "HaplotypeCallerScatter.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
-    "HaplotypeCallerScatter.sample_name": "Iza39_fanca_mother",
+    "HaplotypeCallerScatter.sample_name": "FANCA_MOTHER",
     "HaplotypeCallerScatter.intervals": "gs://gcp-public-data--broad-references/hg38/v0/wgs_calling_regions.hg38.interval_list",
     "HaplotypeCallerScatter.scatter_count": 100,
     "HaplotypeCallerScatter.sample_ploidy": 2,

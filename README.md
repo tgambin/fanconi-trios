@@ -125,8 +125,9 @@ for producing it are in [`data/README.md`](data/README.md).
 
 ## Running local Part2 and reports
 
-Copy Terra outputs into the following local layout. The exact sample IDs used
-by the study are defined once in `scripts/_common.py`.
+Copy Terra outputs into the following local layout. Role-based placeholder
+sample IDs are defined once in `scripts/_common.py`; replace them consistently
+if your authorized input objects use different names.
 
 ```text
 outputs/

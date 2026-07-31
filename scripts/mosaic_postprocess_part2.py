@@ -13,8 +13,8 @@ Steps:
   7. Output: final TSV with all filter columns + classification
 
 Usage:
-  python scripts/mosaic_postprocess_part2.py outputs/part1_csv/ICE59_brca1_150x.part1.csv --sample brca1
-  python scripts/mosaic_postprocess_part2.py outputs/part1_csv/Van70_brca2_150x.part1.csv --sample brca2
+  python scripts/mosaic_postprocess_part2.py outputs/part1_csv/BRCA1_PROBAND_150x.part1.csv --sample brca1
+  python scripts/mosaic_postprocess_part2.py outputs/part1_csv/BRCA2_PROBAND_150x.part1.csv --sample brca2
 """
 
 import argparse

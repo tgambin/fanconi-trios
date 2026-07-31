@@ -496,7 +496,7 @@ def build_coverage_json():
 
     coverage = {}
     for f in sorted(cov_dir.glob("*.txt")):
-        name = f.stem  # e.g. "ICE59_brca1.150x_coverage" or "MAT61_brca1_mother.initial_coverage"
+        name = f.stem  # e.g. "BRCA1_PROBAND.150x_coverage" or "BRCA1_MOTHER.initial_coverage"
         lines = f.read_text().strip().split("\n")
         avg = None
         for line in lines:
