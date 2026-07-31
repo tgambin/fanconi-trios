@@ -1,10 +1,10 @@
 {
-    "Mutect2TumorOnlyScatter.proband_bam": "gs://${TERRA_BUCKET}/brca2_subsampling/Van70_brca2.150x.bam",
-    "Mutect2TumorOnlyScatter.proband_bai": "gs://${TERRA_BUCKET}/brca2_subsampling/Van70_brca2.150x.bam.bai",
+    "Mutect2TumorOnlyScatter.proband_bam": "gs://${TERRA_BUCKET}/brca2_subsampling/BRCA2_PROBAND.150x.bam",
+    "Mutect2TumorOnlyScatter.proband_bai": "gs://${TERRA_BUCKET}/brca2_subsampling/BRCA2_PROBAND.150x.bam.bai",
     "Mutect2TumorOnlyScatter.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
     "Mutect2TumorOnlyScatter.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
     "Mutect2TumorOnlyScatter.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
-    "Mutect2TumorOnlyScatter.sample_name": "Van70_brca2_150x",
+    "Mutect2TumorOnlyScatter.sample_name": "BRCA2_PROBAND_150x",
     "Mutect2TumorOnlyScatter.intervals": "gs://gcp-public-data--broad-references/hg38/v0/wgs_calling_regions.hg38.interval_list",
     "Mutect2TumorOnlyScatter.scatter_count": 100,
     "Mutect2TumorOnlyScatter.cpu_per_scatter": 2,

@@ -1,0 +1,7 @@
+{
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/control/CONTROL_FATHER.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/control/CONTROL_FATHER.bam.bai",
+    "DownsampleProband.sample_name": "CONTROL_FATHER",
+    "DownsampleProband.target_coverages": [],
+    "DownsampleProband.is_wgs": true
+}

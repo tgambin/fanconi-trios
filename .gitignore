@@ -41,6 +41,9 @@ all_trios_igv*.csv
 # Generated outputs are intentionally not part of the repository.
 outputs/
 
+# Manuscript submission package may contain controlled participant data.
+paper/
+
 # Archives
 *.tar.gz
 *.zip

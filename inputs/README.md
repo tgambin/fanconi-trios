@@ -36,8 +36,9 @@ container built from the root Dockerfile. These placeholders are not expanded
 by Terra or Cromwell.
 
 The GIAB manifests reference public NCBI/Broad data and can be used as the
-public test path. Study-cohort manifests retain coded sample labels so that
-their relationship to the manuscript is clear, but their GCS paths are only
-templates: authorized users must replace them with objects in their own
-workspace. No credentials, tokens, participant variants, or original Terra
-submission identifiers are stored in these files.
+public test path. Study-cohort manifests use role-based placeholders such as
+`BRCA1_PROBAND`, `BRCA1_MOTHER`, and `BRCA1_FATHER`; they do not contain the
+original study sample labels. Their GCS paths are templates: authorized users
+must replace them with objects in their own workspace. No credentials, tokens,
+participant variants, or original Terra submission identifiers are stored in
+these files.

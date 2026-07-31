@@ -1,0 +1,7 @@
+{
+    "DownsampleProband.proband_bam": "gs://${TERRA_BUCKET}/fanca/FANCA_MOTHER.bam",
+    "DownsampleProband.proband_bai": "gs://${TERRA_BUCKET}/fanca/FANCA_MOTHER.bam.bai",
+    "DownsampleProband.sample_name": "FANCA_MOTHER",
+    "DownsampleProband.target_coverages": [],
+    "DownsampleProband.is_wgs": true
+}

@@ -1,10 +1,10 @@
 {
-    "Mutect2TumorOnlyScatter.proband_bam": "${LOCAL_TERRA_DIR}/data/bams/pr240-chr14_47M_58M.bam",
-    "Mutect2TumorOnlyScatter.proband_bai": "${LOCAL_TERRA_DIR}/data/bams/pr240-chr14_47M_58M.bam.bai",
+    "Mutect2TumorOnlyScatter.proband_bam": "${LOCAL_TERRA_DIR}/data/bams/FANCT_PROBAND-chr14_47M_58M.bam",
+    "Mutect2TumorOnlyScatter.proband_bai": "${LOCAL_TERRA_DIR}/data/bams/FANCT_PROBAND-chr14_47M_58M.bam.bai",
     "Mutect2TumorOnlyScatter.ref_fasta": "${LOCAL_TERRA_DIR}/data/ref/chr14.fa",
     "Mutect2TumorOnlyScatter.ref_index": "${LOCAL_TERRA_DIR}/data/ref/chr14.fa.fai",
     "Mutect2TumorOnlyScatter.ref_dict": "${LOCAL_TERRA_DIR}/data/ref/chr14.dict",
-    "Mutect2TumorOnlyScatter.sample_name": "pr240_chr14_test",
+    "Mutect2TumorOnlyScatter.sample_name": "FANCT_PROBAND_chr14_test",
     "Mutect2TumorOnlyScatter.intervals": "${LOCAL_TERRA_DIR}/data/metadata/intervals.list",
     "Mutect2TumorOnlyScatter.scatter_count": 5,
     "Mutect2TumorOnlyScatter.cpu_per_scatter": 2,

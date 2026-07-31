@@ -1,10 +1,10 @@
 {
-    "HaplotypeCallerScatter.proband_bam": "gs://${TERRA_BUCKET}/small_proband/pr240-chr14_47M_58M.bam",
-    "HaplotypeCallerScatter.proband_bai": "gs://${TERRA_BUCKET}/small_proband/pr240-chr14_47M_58M.bam.bai",
+    "HaplotypeCallerScatter.proband_bam": "gs://${TERRA_BUCKET}/small_proband/FANCT_PROBAND-chr14_47M_58M.bam",
+    "HaplotypeCallerScatter.proband_bai": "gs://${TERRA_BUCKET}/small_proband/FANCT_PROBAND-chr14_47M_58M.bam.bai",
     "HaplotypeCallerScatter.ref_fasta": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
     "HaplotypeCallerScatter.ref_index": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
     "HaplotypeCallerScatter.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
-    "HaplotypeCallerScatter.sample_name": "pr240_chr14_terra_test",
+    "HaplotypeCallerScatter.sample_name": "FANCT_PROBAND_chr14_terra_test",
     "HaplotypeCallerScatter.intervals": "gs://${TERRA_BUCKET}/small_proband/intervals.list",
     "HaplotypeCallerScatter.scatter_count": 5,
     "HaplotypeCallerScatter.sample_ploidy": 2,
