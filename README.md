@@ -27,6 +27,8 @@ scripts/             Local Part2 filtering, statistics, and reports
 data/annotations/    Small GRCh38 filtering annotations
 data/metadata/       Non-variant test intervals only
 data/giab_benchmark/ Checksums and GIAB download instructions
+arcsv/               ARC-SV v0.9.6 for SV calling (git subtree of SUwonglab/arcsv, MIT license)
+sv_filtering/        SV filtering steps and annotation files
 ```
 
 Generated files are written under `outputs/`, which is intentionally ignored
