@@ -54,6 +54,11 @@ From the remaining calls (deep-coverage alignments), keep SVs that are:
 1. 500 bp to 10 kb in size, with an estimated VAF of 5–50%;
 2. not overlapping (≥50% reciprocal overlap, e.g. `bedtools intersect -f 0.5 -r -v`)
    with SVs previously detected in the human population. The population SVs are
-   those reported in Zhou et al. 2024 (PMID 39353437); the file is not included;
+   the ARC-SV calls in 4,262 genomes (1000 Genomes Project, Human Genome Diversity
+   Project, Simons Genome Diversity Project) reported in Zhou et al. 2024 (Cell;
+   PMID 39353437). Download them from Dryad,
+   https://doi.org/10.5061/dryad.z08kprrpc (CC0): `Dataset_S1_all_ARC-SV_cxSV_calls.zip`
+   (complex SVs, 91.5 MB) and `Dataset_S2_all_ARC-SV_simpleSV_calls.zip` (simple SVs,
+   644.8 MB). They are not included here because of their size;
 3. unique to the sample in which they were detected, i.e., not detected in any
    other sample of this study.
