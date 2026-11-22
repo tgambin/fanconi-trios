@@ -215,3 +215,7 @@ matching VEP cache unless `--no-vep` is used for a non-equivalent smoke test.
 
 Directory-specific details are documented in `data/README.md`,
 `inputs/README.md`, `scripts/README.md`, and `wdl/README.md`.
+
+## License
+
+MIT; see `LICENSE`. `arcsv/` is ARC-SV v0.9.6 under its own MIT license (`arcsv/LICENSE`).
