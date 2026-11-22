@@ -1,4 +1,4 @@
-# Mutation Spectrum Analysis (7-bin + SBS96)
+# Mutation Spectrum Analysis (7-bin + SBS96, somatic vs germline)
 
 An R script that classifies confirmed true-positive single-nucleotide variants (SNVs)
 into a **7-bin mutation spectrum** and a full **96-channel SBS profile** using
@@ -7,7 +7,9 @@ and the human reference genome (hg38).
 
 The script computes the spectrum two independent ways — by collapsing the
 MutationalPatterns 96-channel matrix, and by direct trinucleotide classification —
-and cross-checks that they agree, so the counts are self-validating.
+and cross-checks that they agree, so the counts are self-validating. It then
+compares the 7-bin spectrum of the somatic (mosaic) SNVs of each sample with a
+pooled germline reference (Table 2 and Supplemental Figs. S2–S3 of the paper).
 
 ---
 
@@ -15,8 +17,8 @@ and cross-checks that they agree, so the counts are self-validating.
 
 Given a master table of manually reviewed variants, the script:
 
-1. **Loads and filters** the master CSV, keeping only manually confirmed
-   true-positive SNVs with single-base REF/ALT alleles.
+1. **Loads and filters** the master CSV, keeping SNVs with single-base REF/ALT
+   alleles (the table already contains only confirmed true positives).
 2. **Builds `GRanges`** objects with UCSC-style sequence names.
 3. **Extracts the trinucleotide context** of every variant from hg38.
 4. **Classifies** each SNV into one of 7 bins (pyrimidine-normalized; `C>T`
@@ -30,6 +32,19 @@ Given a master table of manually reviewed variants, the script:
 9. **Computes 96-channel cosine similarity** between samples and draws a heatmap.
 10. **Cross-checks** the MutationalPatterns-collapsed counts against the manual
     counts and reports any mismatch.
+11. **Builds the somatic and germline sets.** Somatic: the mosaic SNVs of each of
+    the five trios (`consensus_class == "mosaic"`) and of the published RAD51C
+    case. Germline reference: the heterozygous de novo SNVs (`consensus_class ==
+    "het"`) of the five trios and of the RAD51C case, pooled (n = 239). Sites
+    whose REF does not match hg38 are dropped and logged.
+12. **Counts the 7 bins** for every somatic sample and for the pooled germline
+    reference.
+13. **Goodness-of-fit against the germline reference:** Pearson chi-square test
+    with a Monte Carlo p-value (B = 100,000, fixed seed; the smallest attainable
+    p is about 1/(B+1)), Benjamini–Hochberg adjustment across samples, cosine
+    similarity and Jensen–Shannon divergence (in nats) to the germline spectrum.
+14. **Pairwise homogeneity** between somatic samples: Fisher–Freeman–Halton test
+    on each 2 × 7 table (Monte Carlo p-value), BH-adjusted across all pairs.
 
 ### The 7 bins
 
@@ -67,7 +82,7 @@ by CpG context isolates the elevated deamination signal at methylated CpG sites.
 
 ## Input format
 
-A single CSV of reviewed variants. The following columns are required:
+Three CSV files. The master table of reviewed trio variants needs these columns:
 
 | Column | Type | Notes |
 |--------|------|-------|
@@ -77,9 +92,23 @@ A single CSV of reviewed variants. The following columns are required:
 | `ALT` | string | Alternate allele — single base for SNVs |
 | `variant_type` | string | Variant class; only rows equal to `"SNV"` are kept |
 | `trio` | string | Sample/group code — must match the `trio_map` keys (see below) |
-| `is_true_positive` | logical | `TRUE` for manually confirmed true positives; only these are kept |
+| `consensus_class` | string | `mosaic` or `het` (heterozygous de novo); used from Step 11 |
+
+The table must contain only manually confirmed true-positive variants.
+
+The two RAD51C tables (mosaic and heterozygous SNVs of the published case) need
+the columns `Chr`, `POS`, `Ref` and `Alt`.
 
 Positions and alleles must be on the **hg38** build to match the reference genome.
+
+### Data availability
+
+The input tables are not distributed with this repository because they contain
+participant-level variants. The trio variants are listed in Supplemental Tables S2
+(mosaic) and S3 (heterozygous de novo) of the paper. The RAD51C variants are from
+the published case: Zemet R, Du H, Gambin T, Lupski JR, Liu P, Stankiewicz P. 2023.
+SNV/indel hypermutator phenotype in biallelic RAD51C variant: Fanconi anemia.
+*Hum Genet* 142: 721–733. doi:10.1007/s00439-023-02550-4.
 
 ### Sample labels
 
@@ -103,6 +132,10 @@ Edit `trio_map` so that the `trio` values match those in your CSV and
    ```r
    input_csv  <- "all_trios_master.csv"   # your master table
    output_dir <- "mutpatterns_output"     # where results are written
+   rad51c_mosaic_csv <- "mosaic-vars-rad51c_truelist.csv"
+   rad51c_het_csv    <- "het-vars-rad51c_truelist.csv"
+   n_monte_carlo <- 1e5                   # Monte Carlo replicates
+   rng_seed      <- 1                     # fixed seed: reproducible p-values
    ```
    Relative paths resolve against the directory you launch the script from;
    absolute paths also work.
@@ -133,6 +166,11 @@ All files are written under `output_dir/` (default `mutpatterns_output/`):
 | `cosine_similarity_heatmap.pdf` | Heatmap of the cosine-similarity matrix |
 | `comparison_mp_vs_manual.csv` | Per-bin, per-sample MP vs manual counts with match/difference |
 | `vcf_files/` | Per-sample VCF intermediates generated for MutationalPatterns |
+| `somatic_germline/germline_reference_composition.csv` | Germline reference: SNVs per source and total (239) |
+| `somatic_germline/ref_check_log.csv` | Sites dropped because REF does not match hg38 |
+| `somatic_germline/seven_bin_counts.csv` | 7-bin counts, somatic samples and pooled germline |
+| `somatic_germline/gof_vs_germline.csv` | Goodness-of-fit p-value, BH-adjusted p-value, cosine similarity and JSD per sample (Table 2) |
+| `somatic_germline/pairwise_homogeneity_qvals.csv` | BH-adjusted q-values of the pairwise homogeneity tests |
 
 ---
 
